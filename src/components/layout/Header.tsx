@@ -44,13 +44,13 @@ const Header = () => {
             <img src={logo} alt="Kings Property Consultancy" className="h-14 w-auto" />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          {/* Navigation */}
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium tracking-wider uppercase transition-colors duration-300 hover:text-primary ${
+                className={`text-xs lg:text-sm font-medium tracking-wider uppercase transition-colors duration-300 hover:text-primary ${
                   location.pathname === link.path
                     ? "text-primary"
                     : "text-foreground"
@@ -61,16 +61,16 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3 lg:gap-4">
             <a
               href="tel:+447985708511"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="hidden lg:flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="h-4 w-4" />
               <span>+44 7985 708511</span>
             </a>
             <Link to="/contact">
-              <Button variant="hero" size="default">
+              <Button variant="hero" size="sm" className="lg:size-default">
                 Free Valuation
               </Button>
             </Link>
@@ -79,7 +79,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-foreground p-2"
+            className="md:hidden text-foreground p-2"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -89,7 +89,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border transition-all duration-300 ${
+        className={`md:hidden absolute top-full left-0 right-0 bg-background border-b border-border transition-all duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
