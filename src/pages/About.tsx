@@ -91,6 +91,19 @@ const About = () => {
                   <p className="font-display text-4xl font-bold">15+</p>
                   <p className="text-sm uppercase tracking-wider">Years of Trust</p>
                 </div>
+                <div className="absolute top-6 left-6 bg-background/95 backdrop-blur-sm border border-primary/20 px-4 py-3 hidden lg:flex items-center gap-3">
+                  <div className="flex text-yellow-500">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <div className="text-sm">
+                    <span className="font-semibold text-foreground">5.0</span>
+                    <span className="text-muted-foreground ml-1">(29 Reviews)</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -181,6 +194,19 @@ const About = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/20 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-bl from-primary/15 to-transparent" />
+                <div className="absolute top-6 right-6 bg-background/95 backdrop-blur-sm border border-primary/20 px-4 py-3 hidden lg:flex items-center gap-3">
+                  <div className="flex text-yellow-500">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <div className="text-sm">
+                    <span className="font-semibold text-foreground">5.0</span>
+                    <span className="text-muted-foreground ml-1">(29 Reviews)</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
