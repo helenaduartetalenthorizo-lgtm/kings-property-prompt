@@ -4,8 +4,8 @@ import Layout from "@/components/layout/Layout";
 import PageBanner from "@/components/PageBanner";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Award, Users, Target, Heart } from "lucide-react";
-import hero3 from "@/assets/hero-3.jpg";
-import hero4 from "@/assets/hero-4.jpg";
+import propertyHouse from "@/assets/property-house.jpg";
+import propertyEstate from "@/assets/property-estate.jpg";
 
 const values = [
   {
@@ -55,7 +55,7 @@ const About = () => {
         <PageBanner
           title="About Us"
           subtitle="Your trusted partner in London's property market"
-          image={hero3}
+          image={propertyHouse}
         />
 
         {/* Story Section */}
@@ -81,7 +81,7 @@ const About = () => {
               </div>
               <div className="relative">
                 <img
-                  src={hero4}
+                  src={propertyEstate}
                   alt="Luxury Interior"
                   className="w-full h-[500px] object-cover"
                 />
@@ -173,7 +173,7 @@ const About = () => {
               </div>
               <div className="relative">
                 <img
-                  src={hero3}
+                  src={propertyHouse}
                   alt="Elegant Property"
                   className="w-full h-[600px] object-cover"
                 />
