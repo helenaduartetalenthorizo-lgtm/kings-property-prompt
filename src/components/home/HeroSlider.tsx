@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
+import propertyEstate from "@/assets/property-estate.jpg";
 import hero4 from "@/assets/hero-4.jpg";
 
 const slides = [
@@ -19,7 +19,7 @@ const slides = [
     subtitle: "Elevated living with breathtaking views",
   },
   {
-    image: hero3,
+    image: propertyEstate,
     title: "Prestigious Estates",
     subtitle: "Where elegance meets sophistication",
   },
