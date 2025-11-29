@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Home, TrendingUp } from "lucide-react";
-import hero3 from "@/assets/hero-3.jpg";
+import propertyEstate from "@/assets/property-estate.jpg";
 
 const stats = [
   { icon: Home, value: "500+", label: "Properties Sold" },
@@ -18,7 +18,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative overflow-hidden">
               <img
-                src={hero3}
+                src={propertyEstate}
                 alt="Luxury Property"
                 className="w-full h-[500px] object-cover"
               />
