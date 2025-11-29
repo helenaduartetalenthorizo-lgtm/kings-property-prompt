@@ -16,12 +16,14 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden group">
               <img
                 src={propertyEstate}
                 alt="Luxury Property"
                 className="w-full h-[500px] object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent" />
               <div className="absolute inset-0 border border-primary/20" />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground p-8 hidden lg:block">

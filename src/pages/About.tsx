@@ -79,13 +79,15 @@ const About = () => {
                   We combine traditional values of honesty, professionalism, and dedication with modern technology and innovative marketing strategies to deliver exceptional results for our clients.
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative overflow-hidden">
                 <img
                   src={propertyEstate}
                   alt="Luxury Interior"
                   className="w-full h-[500px] object-cover"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-8 hidden lg:block">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/15 to-transparent" />
+                <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-8 hidden lg:block z-10">
                   <p className="font-display text-4xl font-bold">15+</p>
                   <p className="text-sm uppercase tracking-wider">Years of Trust</p>
                 </div>
@@ -171,12 +173,14 @@ const About = () => {
                   </Link>
                 </div>
               </div>
-              <div className="relative">
+              <div className="relative overflow-hidden">
                 <img
                   src={propertyHouse}
                   alt="Elegant Property"
                   className="w-full h-[600px] object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-bl from-primary/15 to-transparent" />
               </div>
             </div>
           </div>
